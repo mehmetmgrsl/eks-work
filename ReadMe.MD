@@ -1,4 +1,4 @@
-## 1. Why?
+## 1. Why EKS?
 
 - When you want to deploy and manage containerized applications using Kubernetes without dealing with the complexity of maintaining the control plane then you can use EKS (Elastic Kubernetes Service -> AWS managed service).
 
@@ -84,11 +84,17 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 
 ### 2.7. Access the app
 
- ```kubectl get ingress -n game-2048``` # get the <ADDRESS>
+ ```kubectl get ingress -n game-2048``` # get the \<ADDRESS\>
 
 Open a browser and try to access -> http://ADDRESS
 
-### 2.8. Delete the cluster
+
+### 2.8. Uninstalling the Chart
+
+```eksctl delete iamserviceaccount --cluster eks-cluster --namespace kube-system --name aws-load-balancer-controller```
+
+
+### 2.9. Delete the cluster
 
 ``eksctl delete cluster --name eks-cluster --region eu-north-1``
 
@@ -101,3 +107,4 @@ Open a browser and try to access -> http://ADDRESS
 - [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)
 - [Ultimate AWS DevOps Project on EKS - Abhishek Veeramalla](https://www.youtube.com/watch?v=RRCrY12VY_s)
 - [How do I set up the AWS Load Balancer Controller on an Amazon EKS cluster for Fargate and deploy the 2048 game](https://repost.aws/knowledge-center/eks-alb-ingress-controller-fargate)
+- [AWS Load Balancer Controller](https://github.com/aws/eks-charts/tree/master/stable/aws-load-balancer-controller)
