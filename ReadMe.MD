@@ -4,9 +4,12 @@
 
 - It's beneficial when you need efficient scaling, high availability, seamless integration with AWS services, and enhanced security.
 
-## EKS with Fargate
 
 - [EKS with Fargate](./eks-with-fargate/ReadMe.MD)
+
+- [EKS cluster using AWS Console](./eks-cluster-using-AWS-Console/ReadMe.MD)
+
+- [EKS cluster using terraform](./eks-cluster-using-terraform/ReadMe.MD)
 
 
 ### Resources

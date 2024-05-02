@@ -19,3 +19,4 @@ terraform.rc
 
 # Ignore Visual Studio Code specific files
 .vscode/
+
