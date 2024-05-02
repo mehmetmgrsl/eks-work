@@ -1,0 +1,21 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore any files ending in `.tfvars`
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and do not need to be committed
+override.tf
+
+# Ignore CLI configuration files
+terraform.rc
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Visual Studio Code specific files
+.vscode/
