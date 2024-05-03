@@ -78,6 +78,7 @@ module "eks" {
 
   eks_managed_node_groups = {
     default = {
+      name         = "worker-node"
       min_size     = var.managed_node_group.min_size
       max_size     = var.managed_node_group.max_size
       desired_size = var.managed_node_group.desired_size
