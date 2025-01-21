@@ -7,7 +7,7 @@
 
 - [EKS with Fargate](./eks-with-fargate/ReadMe.MD)
 
-- [EKS cluster using AWS Console](./eks-cluster-using-AWS-Console/ReadMe.MD)
+- [EKS cluster with Cluster Autoscaler](./eks-cluster-with-cas/ReadMe.MD)
 
 - [EKS cluster using terraform](./eks-cluster-using-terraform/ReadMe.MD)
 
