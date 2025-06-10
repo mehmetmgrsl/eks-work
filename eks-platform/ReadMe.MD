@@ -65,6 +65,38 @@ spec:
    - The ACK controller sees this and creates the bucket in AWS automatically.
 
 
+### Observability at scale
+
+#### 1. Roles and Responsibilities
+
+![Roles and Responsibilities](platform-05.png)
+
+   - The platform team builds dashboards, alerts, and instrumentation tools to monitor the system. 
+   - These tools send signals to both the platform team (cluster signals) and developers (workload signals) to help them detect and fix issues.
+
+#### 2. What to alert on?
+
+![What to alert on?](platform-06.png)
+
+
+1. Control plane:
+- Alert on issues like latency, error rate, and storage problems.
+
+2. Data plane:
+- Watch for node health, provisioning issues, and kubelet status.
+
+3. System components:
+- Monitor CoreDNS, CNI plugins, and service mesh behavior.
+
+4. Customer experience:
+- Track workload health and tools like Argo CD to ensure app delivery and performance.
+
+
+#### 3. Cluster Inventory
+
+- Using **Backstage**: It gives DevOps and platform teams a single pane of glass to view and manage all clusters and workloads easily
+
+- Using **Amazon EKS Dashboard**:  It is a lightweight, centralized view of all EKS clusters inside AWS without external tools.
 
 ### References:
 
