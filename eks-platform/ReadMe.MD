@@ -98,6 +98,59 @@ spec:
 
 - Using **Amazon EKS Dashboard**:  It is a lightweight, centralized view of all EKS clusters inside AWS without external tools.
 
+### Govern
+
+#### What does governance enable?
+
+- Security & compliance – Meet security and audit requirements.
+
+- Adaptability & flexibility – Adjust to changing business needs.
+
+- Cost-effectiveness – Stay within financial limits.
+
+- Scalability & resilience – Support business growth and stability.
+
+#### Policy Engines
+
+![Policy Engines](platform-07.png)
+
+- Kube API receives a request (e.g., create pod).
+
+- The request passes through:
+
+  - ✅ Validating admission policies (built-in)
+
+    - These are native Kubernetes features (since v1.26+) that let you define rules directly in the cluster to accept or reject requests before they’re applied.
+    - A built-in way to enforce rules without extra tools like Kyverno or Gatekeeper.
+  - ✅ Mutating webhooks (modify request if needed)
+
+  - ✅ Validating webhooks (approve/reject request)
+
+- Tools like OPA Gatekeeper or Kyverno implement these webhooks to enforce policies.
+
+- Results are integrated into AWS Config and Amazon EKS for compliance and visibility.
+
+- In Short -> Kyverno or Gatekeeper validate or modify Kubernetes requests to enforce security, compliance, or operational rules before deployment.
+
+##### Managing Policies
+
+![Managing Policies](platform-08.png)
+
+
+##### Policy Findings for fleets
+
+![Policy Findings for fleets](platform-09.png)
+
+- Kyverno runs in EKS clusters to enforce policies.
+
+- Policy Reporter collects violations.
+
+- Violations are sent from spoke accounts to the audit account.
+
+- AWS Security Hub aggregates and displays the results centrally.
+
 ### References:
 
 (1*) [AWS re:Invent 2024 - Building production-grade resilient architectures with Amazon EKS (KUB404)](https://www.youtube.com/watch?v=g9USwIPr7Xs)
+
+(2*)[Centralize visibility of Kubernetes clusters across AWS Regions and accounts with EKS Dashboard](https://aws.amazon.com/blogs/aws/centralize-visibility-of-kubernetes-clusters-across-aws-regions-and-accounts-with-eks-dashboard/)
