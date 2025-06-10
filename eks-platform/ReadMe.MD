@@ -42,7 +42,27 @@
   - (Example: Run 50 apps across 5 clusters without repeating manual steps.)
 
 
+### Amazon EKS with GitOps
 
+![Amazon EKS with GitOps](platform-04.png)
+  - This diagram shows a GitOps-based EKS platform using ArgoCD and AWS ACK to manage both applications and AWS infrastructure.
+  - Teams manage everything via: 
+    - Git → ArgoCD applies it → ACK provisions AWS infra → All runs in secure EKS setup.
+
+- **AWS ACK (AWS Controllers for Kubernetes)** is a set of Kubernetes controllers that let you manage AWS services directly from Kubernetes using Kubernetes-native APIs.
+
+   - With ACK, you can define AWS resources (like S3 buckets, DynamoDB tables, SNS topics, etc.) using Kubernetes YAML manifests — no need to switch to Terraform or the AWS Console.
+
+```
+apiVersion: s3.services.k8s.aws/v1alpha1
+kind: Bucket
+metadata:
+  name: my-bucket
+spec:
+  name: my-bucket-name
+```
+
+   - The ACK controller sees this and creates the bucket in AWS automatically.
 
 
 
