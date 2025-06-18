@@ -11,6 +11,8 @@
 
 - [EKS cluster using terraform](./eks-cluster-using-terraform/ReadMe.MD)
 
+- [MongoDB replica set deployment on EKS with Terraform](./eks-mongodb/ReadMe.MD)
+
 
 ### Resources
 
