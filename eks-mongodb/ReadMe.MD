@@ -1,18 +1,23 @@
 ## Goal
 -  Deploy a MongoDB replica set inside an Amazon EKS Kubernetes cluster using:
-  - StatefulSets (for stable pod identity and persistent volumes)
-  - Amazon EBS CSI driver (for dynamic volume provisioning)
-  - Terraform (for infrastructure as code)
-  - Secrets: to securely share authentication between MongoDB pods
+   - StatefulSets (for stable pod identity and persistent volumes)
+   - Amazon EBS CSI driver (for dynamic volume provisioning)
+   - Terraform (for infrastructure as code)
+   - Secrets: to securely share authentication between MongoDB pods
 
 ## Simple Explanation
 
-- MongoDB is deployed as a container.
+- MongoDB runs inside Kubernetes pods as a containerized application.
 
-- Persistent storage (like EBS) is used to store MongoDB data safely across pod restarts.
+- Each pod uses a dedicated Amazon EBS volume for persistent storage, ensuring data remains intact across pod restarts or rescheduling.
 
 
 ## Architecture
+
+ - ![Architecture](architecture-01.png)
+   - This diagram shows a MongoDB replica set deployed on Amazon EKS using a StatefulSet. - Each pod (mongodb-0 as PRIMARY, mongodb-1 and mongodb-2 as SECONDARY) gets its own dynamically provisioned EBS volume via the EBS CSI driver, and all are discoverable via a headless service for stable DNS.
+ - ![Architecture](architecture-02.png)
+   - This diagram shows that the StatefulSet provisions Amazon EBS volumes via the specified StorageClass in an EKS cluster.
 
 
 ### 1. Create a K8S cluster
@@ -120,3 +125,5 @@ db.femaleusers.insertMany([
 (2*) https://devops.supportsages.com/setting-up-mongodb-as-a-statefulset-in-kubernetes-a-step-by-step-guide-6e9144b2d679
 
 (3*) https://www.mongodb.com/developer/products/mongodb/mongodb-with-kubernetes/
+
+(4*) https://www.bionconsulting.com/blog/running-production-ready-databases-on-eks-part-1

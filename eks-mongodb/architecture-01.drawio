@@ -1,0 +1,88 @@
+<mxfile host="Electron" modified="2025-06-18T13:35:44.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="1-0_WXBHhb-w1mlyIAjg" version="22.1.21" type="device">
+  <diagram name="Page-1" id="KuYbwHTvLw0d2fVahPnk">
+    <mxGraphModel dx="954" dy="674" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kjXMEqIANUIMd8hTFo1Z-3" value="&lt;p style=&quot;line-height: 0%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="60" y="60" width="660" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMEqIANUIMd8hTFo1Z-9" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.eks;" parent="1" vertex="1">
+          <mxGeometry x="105" y="50" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="kjXMEqIANUIMd8hTFo1Z-10" value="Amazon EKS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="84" y="30" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-34" value="&lt;b&gt;EBS CSI Driver&amp;nbsp;&lt;/b&gt; &amp;nbsp; (Dynamic Provisioning of EBS volumes)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="538.1" y="70" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-35" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="215" width="130" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-36" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="131.9" y="265" width="56.2" height="52.4" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-37" value="MongoDB Pod (mongodb-0) PRIMARY)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="110" y="175" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-38" value="MongoDB Container" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="130.00000000000003" y="235" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-39" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="134.9" y="385" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-40" value="EBS Volume" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="130.10000000000005" y="445" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lPZvqi0CD85ePnVW3VSt-36" target="lPZvqi0CD85ePnVW3VSt-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-42" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="215" width="130" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-43" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="311.9" y="265" width="56.2" height="52.4" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-45" value="MongoDB Container" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="310" y="235" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-46" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="314.9" y="385" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-47" value="EBS Volume" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="310.1" y="445" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lPZvqi0CD85ePnVW3VSt-43" target="lPZvqi0CD85ePnVW3VSt-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-49" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="215" width="130" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-50" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="481.9" y="265" width="56.2" height="52.4" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-52" value="MongoDB Container" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="235" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-53" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.volume;fillColor=#E05243;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="484.9" y="385" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-54" value="EBS Volume" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480.1" y="445" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lPZvqi0CD85ePnVW3VSt-50" target="lPZvqi0CD85ePnVW3VSt-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-56" value="Headless Service&lt;br&gt;&lt;pre style=&quot;overflow: auto; padding: 9.144px 13.716px; word-break: break-all; text-align: start; margin-top: 0px !important; margin-bottom: 0px !important;&quot;&gt;&lt;font face=&quot;Menlo, Roboto Mono, Courier New, Courier, monospace, Inter, sans-serif&quot; color=&quot;#494949&quot;&gt;mongodb-service.cluster.local (DNS records for all pods)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="105" y="525" width="505" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-57" value="MongoDB Pod (mongodb-1) SECONDARY)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="285" y="175" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPZvqi0CD85ePnVW3VSt-58" value="MongoDB Pod (mongodb-2) SECONDARY)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="455" y="175" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
